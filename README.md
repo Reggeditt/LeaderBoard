@@ -234,14 +234,14 @@ I would like to thank microverse for this awesome challenge.
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **[Question_1]**
+- **[is this project currently complete?]**
 
-  - [Answer_1]
+  - [not by a long shot ;-)]
 
-- **[Question_2]**
+<!-- - **[Question_2]**
 
   - [Answer_2]
-
+ -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->

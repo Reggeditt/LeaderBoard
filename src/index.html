@@ -4,8 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Setup practice 1</title>
+    <title>Leader Board App</title>
   </head>
   <body>
+    <header>
+      <h1>Leaderboard</h1>
+    </header>
+    <main>
+      <section class="leader-board-wrap">
+        <div class="recent-scores">
+          <h2>Recent scores</h2>
+          <button class="refresh-scores-btn">Refresh</button>
+        </div>
+        <div class="leader-board" id="leader-board"></div>
+      </section>
+      <aside class="info-collection-wrap">
+        <form action="" class="submit-form" id="submit-form">
+          <h2>Add your score</h2>
+          <input type="name" id="user" placeholder="Your name" required>
+          <input type="number" id="score" placeholder="Your score" min="0" max="100" required>
+          <input type="submit" value="Submit">
+        </form>
+      </aside>
+    </main>
   </body>
 </html>

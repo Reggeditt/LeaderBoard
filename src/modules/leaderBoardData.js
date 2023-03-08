@@ -1,4 +1,8 @@
-import { leaderboardEl } from './DOMelements.js';
+import {
+  leaderboardEl,
+  userNameEl,
+  userScoreEl,
+} from './DOMelements';
 
 class LeaderBoardData {
   constructor() {
@@ -18,7 +22,9 @@ class LeaderBoardData {
     this.usersData.forEach((userData, index) => {
       const userInfo = document.createElement('li');
       userInfo.classList.add('user-info');
-      if (index % 2 === 0) userInfo.classList.add('even');
+      index % 2 === 0
+        ? userInfo.classList.add('even')
+        : userInfo.classList.add('odd');
       userInfo.innerHTML = `${userData.user}: ${userData.score}`;
       leaderboardEl.appendChild(userInfo);
     });

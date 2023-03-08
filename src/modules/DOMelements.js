@@ -3,6 +3,4 @@ const submitFormEl = document.getElementById('submit-form');
 const userNameEl = document.getElementById('user');
 const userScoreEl = document.getElementById('score');
 
-export {
-  leaderboardEl, submitFormEl, userNameEl, userScoreEl,
-};
+export { leaderboardEl, submitFormEl, userNameEl, userScoreEl };

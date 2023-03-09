@@ -72,7 +72,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link is not yet available](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://reggeditt.github.io/LeaderBoard/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

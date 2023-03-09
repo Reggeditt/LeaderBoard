@@ -1,40 +1,9 @@
 <a name="readme-top"></a>
-
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   <!-- <img src="murple_logo.png" alt="logo" width="140"  height="auto" /> -->
   <br/>
-
   <h3><b>Leaderboard App</b></h3>
-
 </div>
-
-<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
@@ -93,7 +62,7 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **[allows users to enter their name and score]**
+- **[allows users to enter their name and submit a score]**
 - **[sorts the data according to scores in descending order]**
 - **[renders a leaderboard list on the webpage]**
 
@@ -103,7 +72,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link is not yet available](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://reggeditt.github.io/LeaderBoard/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,11 +82,13 @@ After you're finished please remove all the comments and instructions!
 
 To get a local copy up and running, follow these steps.
 > clone the project to your local machine
+>
 ### Prerequisites
 
 In order to run this project you need:
 
 a code editor
+
 ### Setup
 
 Clone this repository to your desired folder:
@@ -135,21 +106,26 @@ Example commands:
 
 Install this project with:
 
-> run 
+> run
+
 ```
        npm init -y
 ```
 
-> run 
+> run
+
 ```
        npm install
 ```
+
 ### Usage
 
 To run the project, execute the following command:
+
 ```
 npm start
 ```
+
 ### Run tests
 
 To run tests, run the following command:

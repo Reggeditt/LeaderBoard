@@ -14,16 +14,17 @@
       <section class="leader-board-wrap">
         <div class="recent-scores">
           <h2>Recent scores</h2>
-          <button class="refresh-scores-btn">Refresh</button>
+          <button class="refresh-scores-btn" id="refresh-button" title="update Leaderboard">Refresh</button>
         </div>
         <ul class="leader-board" id="leader-board"></ul>
+        <button class="reset-btn" id="reset" title="reset Leaderboard">Reset</button>
       </section>
       <aside class="info-collection-wrap">
         <form action="" class="submit-form" id="submit-form">
           <h2>Add your score</h2>
           <input type="name" id="user" placeholder="Your name" required>
           <input type="number" id="score" placeholder="Your score" min="0" max="100" required>
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit your score">
         </form>
       </aside>
     </main>

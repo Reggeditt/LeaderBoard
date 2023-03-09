@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: cursive;
 }
 
 button {
@@ -10,6 +11,7 @@ button {
   border: none;
   border-radius: 5px;
   box-shadow: 3px 4px 5px 2px rgba(0, 0, 0, 0.6);
+  transition: color 0.1s, background-color 1s;
 }
 
 body {
@@ -51,6 +53,13 @@ main {
   justify-content: space-between;
 }
 
+.refresh-scores-btn:hover {
+  background-color: #c37c88bc;
+  border: 2px solid rgba(255, 255, 255, 0.692);
+  box-shadow: 3px 4px 5px 2px rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
 .leader-board {
   list-style: none;
   width: 100%;
@@ -59,17 +68,31 @@ main {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  box-shadow: 1px 3px 2px 1px rgba(0, 0, 0, 0.6);
 }
 
 .even {
-  background-color: #cf259174;
+  background-color: #cf259169;
+}
+
+.reset-leaderboard:hover {
+  background-color: #a9dc51;
+  border: 2px solid rgba(255, 255, 255, 0.692);
+  color: black;
+  font-weight: 500;
 }
 
 .user-info {
   font-size: 1rem;
+  font-family: cursive;
   font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   padding: 5px;
   width: 100%;
+  cursor: pointer;
   border-bottom: 1px solid  lightgray;
 }
 
@@ -84,10 +107,25 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   gap: 1.5rem;
+  backdrop-filter: blur(50px);
 }
 
 .submit-form input {
   padding: 5px;
   border: 1px solid lightgray;
   border-radius: 5px;
+  outline: none;
+  box-shadow: 1px 3px 2px 1px rgba(0, 0, 0, 0.6);
+}
+
+input[type="submit"] {
+  transition: background-color 1s;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #c37c88;
+  border: 2px solid rgba(255, 255, 255, 0.692);
+  box-shadow: 3px 4px 5px 2px rgba(0, 0, 0, 0.6);
+  color: white;
 }

@@ -73,6 +73,10 @@ main {
   box-shadow: 1px 3px 2px 1px rgba(0, 0, 0, 0.6);
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .even {
   background-color: #cf259169;
 }

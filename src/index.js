@@ -1,12 +1,29 @@
 import './index.css';
+import {
+  submitFormEl,
+  userNameEl,
+  userScoreEl,
+  refreshButtonEl,
+  resetButtonEl,
+} from './modules/DOMelements.js';
 import leaderboardData from './modules/leaderBoardData.js';
-import { submitFormEl, userNameEl, userScoreEl } from './modules/DOMelements.js';
 
+leaderboardData.renderPage();
 submitFormEl.addEventListener('submit', (e) => {
   e.preventDefault();
   const user = userNameEl.value;
   const score = userScoreEl.value;
-  leaderboardData.addUserData(user, score);
-  leaderboardData.sortUsersData();
-  leaderboardData.renderUsersData();
+  leaderboardData.addNewUser(user, score);
+  leaderboardData.renderPage();
+  leaderboardData.renderPage();
+  userNameEl.value = '';
+  userScoreEl.value = '';
+});
+
+refreshButtonEl.addEventListener('click', () => {
+  leaderboardData.renderPage();
+});
+
+resetButtonEl.addEventListener('click', () => {
+  leaderboardData.resetLeaderBoard();
 });

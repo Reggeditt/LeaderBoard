@@ -5,7 +5,7 @@ class LeaderBoardData {
   constructor() {
     this.usersData = [];
     this.baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
-    this.gameID = '9PGxA4ptdB7NQ03rDMcS';
+    this.gameID = window.localStorage.getItem('gameID') || '9PGxA4ptdB7NQ03rDMcS';
   }
 
   addNewUser = async (user, score) => {
@@ -54,8 +54,13 @@ class LeaderBoardData {
 
   resetLeaderBoard = async () => {
     this.gameID = await createNewGame('Leaderboard');
+    this.updateLocalStorage(this.gameID);
     this.usersData = [];
     this.renderPage();
+  }
+
+  updateLocalStorage = (gameID) => {
+    localStorage.setItem('gameID', gameID);
   }
 }
 

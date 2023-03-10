@@ -9,6 +9,7 @@ import {
 import leaderboardData from './modules/leaderBoardData.js';
 
 leaderboardData.renderPage();
+
 submitFormEl.addEventListener('submit', (e) => {
   e.preventDefault();
   const user = userNameEl.value;
@@ -18,6 +19,7 @@ submitFormEl.addEventListener('submit', (e) => {
   leaderboardData.renderPage();
   userNameEl.value = '';
   userScoreEl.value = '';
+  userNameEl.focus();
 });
 
 refreshButtonEl.addEventListener('click', () => {
